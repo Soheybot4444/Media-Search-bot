@@ -26,9 +26,15 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Messages
 START_MSG = """
-**Hi, I'm Media Search bot**
+سلام 👋
+به فول‌ رپ؛
+کامل ‌ترین و به ‌‌روز ترین ربات
+آرشیو رپ فارسی خوش آمدید 🖤
+🔎 برای جستجوی بهتر، صرفا
+اسم آهنگ را تایپ کنید، نه خواننده!
 
-Here you can search files in inline mode. Just press following buttons and start searching.
+🔥همچنین برای دانلود فول آرشیوها
+به صورت یکجا، میتونید از ربات @rap_gallery_bot استفاده کنید.
 """
 
 SHARE_BUTTON_TEXT = 'Checkout {username} for searching files'
