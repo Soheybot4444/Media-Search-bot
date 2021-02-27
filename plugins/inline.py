@@ -1,6 +1,6 @@
 from urllib.parse import quote
 from pyrogram import Client, emoji, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultCachedDocument
+from pyrogram.types import InlineKeyboardMarkup, InlineQueryResultCachedDocument
 from utils import get_search_results
 from info import MAX_RESULTS, CACHE_TIME, SHARE_BUTTON_TEXT, AUTH_USERS
 
@@ -54,15 +54,6 @@ async def answer(bot, query):
                            cache_time=CACHE_TIME,
                            switch_pm_text=switch_pm_text,
                            switch_pm_parameter="okay")
-
-
-def get_reply_markup(username):
-    url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
-    buttons = [[
-        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-        InlineKeyboardButton('Share bot', url=url),
-    ]]
-    return InlineKeyboardMarkup(buttons)
 
 
 def get_size(size):
